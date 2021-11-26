@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.main_container {
+  padding-top: 50px;
+}
+
+.main_func {
+  margin-bottom: 20px;
+}
+
+.add_func {
+  display: flex;
+}
+
+.btn_logout {
+  text-align: center
+}
+
+.dialog_content {
+  padding-top: 12px !important;
+}
+
+.dialog_input {
+  margin-bottom: 12px !important;
+}
+
+.btn_add {
+  margin-right: 20px;
+}
+
+.atm_card {
+  padding: 28px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.atm_img {
+  width: 128px;
+  height: 128px;
+}
+
+.green_text {
+  color: #3ded11;
+}
+
+.red_text {
+  color: #f01313;
+}
+
