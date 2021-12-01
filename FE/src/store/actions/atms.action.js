@@ -43,8 +43,7 @@ export const addAtm = (input) => {
 
 export const delAtm = async (id) => {
     try {
-        const res = await delAtmApi(id);
-        
+        return await delAtmApi(id);
     } catch (err) {
         toast.error(err.message)
     }

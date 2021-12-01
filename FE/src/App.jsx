@@ -1,5 +1,5 @@
 import "./App.css";
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import store, { persistor } from "./store/store";
 import MainScreen from "./screen/MainScreen";
 import {
@@ -9,8 +9,11 @@ import {
 } from "react-router-dom";
 import Routing from "./router/Routing";
 import { PersistGate } from "redux-persist/integration/react";
+import { useEffect } from "react";
+import { accessTokenConfig } from "./services/config.service";
 
 function App() {
+  
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

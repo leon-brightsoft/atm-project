@@ -3,6 +3,7 @@ import { SET_AUTH } from "../actions/types";
 const initialState = {
   user: null,
   isAuthenticated: false,
+  token: null
 };
 
 const auth = (state = initialState, action) => {

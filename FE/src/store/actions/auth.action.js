@@ -1,5 +1,4 @@
 import { LOGOUT, SET_AUTH } from "./types";
-
 import { loginApi, registerApi } from "../../services/auth.service";
 import { accessTokenConfig } from "../../services/config.service";
 import toast from "react-hot-toast";
@@ -12,7 +11,7 @@ export const login = (input) => {
       if (res.data.user) {
         dispatch({
           type: SET_AUTH,
-          payload: { isAuthenticated: true, user: res.data.user },
+          payload: { isAuthenticated: true, user: res.data.user, token: res.data.PRIVATE_TOKEN },
         });
         accessTokenConfig(res.data.PRIVATE_TOKEN);
         toast.success("Login successfully");
